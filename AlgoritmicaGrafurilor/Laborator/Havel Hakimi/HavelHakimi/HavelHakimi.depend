@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1558451593 source:d:\facultate\algoritmicagrafurilor\lab3\havelhakimi\main.cpp
+	<iostream>
+	<algorithm>
+	<fstream>
+	<vector>
+	<list>
+

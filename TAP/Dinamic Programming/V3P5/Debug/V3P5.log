@@ -1,0 +1,22 @@
+﻿  V3P5.cpp
+D:\Facultate\Anul 2\Semestrul 1\TAP\Lab-PD\V3P5\V3P5.cpp(36): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Facultate\Anul 2\Semestrul 1\TAP\Lab-PD\V3P5\V3P5.cpp(37): warning C4244: '=': conversion from 'const _Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Facultate\Anul 2\Semestrul 1\TAP\Lab-PD\V3P5\V3P5.cpp(39): warning C4244: '=': conversion from '_Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+D:\Facultate\Anul 2\Semestrul 1\TAP\Lab-PD\V3P5\V3P5.cpp(45): warning C4244: '=': conversion from 'const _Ty' to 'int', possible loss of data
+          with
+          [
+              _Ty=__int64
+          ]
+  V3P5.vcxproj -> D:\Facultate\Anul 2\Semestrul 1\TAP\Lab-PD\V3P5\Debug\V3P5.exe

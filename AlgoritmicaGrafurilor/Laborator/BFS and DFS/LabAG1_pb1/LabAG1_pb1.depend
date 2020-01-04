@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1558019024 source:d:\facultate\algoritmicagrafurilor\lab1\labag1_pb1\graf.out.c
+
+1558019328 source:d:\facultate\algoritmicagrafurilor\lab1\labag1_pb1\main.cpp
+	<iostream>
+	<fstream>
+	<set>
+

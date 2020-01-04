@@ -1,0 +1,6 @@
+# depslib dependency file v1.0
+1558203054 source:d:\facultate\algoritmicagrafurilor\lab2\muchiicritice\main.cpp
+	<iostream>
+	<list>
+	<fstream>
+

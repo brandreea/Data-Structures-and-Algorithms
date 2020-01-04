@@ -1,0 +1,8 @@
+# depslib dependency file v1.0
+1558542481 source:d:\facultate\algoritmicagrafurilor\lab5\2.dijkstra\main.cpp
+	<iostream>
+	<fstream>
+	<list>
+	<vector>
+	<set>
+

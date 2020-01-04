@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1558611102 source:d:\facultate\algoritmicagrafurilor\lab5\floyd-warshall\main.cpp
+	<iostream>
+	<fstream>
+

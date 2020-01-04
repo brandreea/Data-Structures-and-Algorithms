@@ -1,0 +1,6 @@
+﻿  BranchBound.cpp
+D:\Facultate\Anul 2\Semestrul 1\TAP\Lab-BT\BranchBound\BranchBound.cpp(43): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+D:\Facultate\Anul 2\Semestrul 1\TAP\Lab-BT\BranchBound\BranchBound.cpp(47): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+D:\Facultate\Anul 2\Semestrul 1\TAP\Lab-BT\BranchBound\BranchBound.cpp(54): warning C4244: '+=': conversion from 'float' to 'int', possible loss of data
+D:\Facultate\Anul 2\Semestrul 1\TAP\Lab-BT\BranchBound\BranchBound.cpp(64): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+  BranchBound.vcxproj -> D:\Facultate\Anul 2\Semestrul 1\TAP\Lab-BT\BranchBound\Debug\BranchBound.exe

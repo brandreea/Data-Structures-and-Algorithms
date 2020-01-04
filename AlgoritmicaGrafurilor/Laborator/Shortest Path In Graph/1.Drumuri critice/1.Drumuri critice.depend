@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1558722327 source:d:\facultate\algoritmicagrafurilor\lab5\1.drumuri critice\main.cpp
+	<iostream>
+	<fstream>
+	<stack>
+	<list>
+

@@ -1,0 +1,5 @@
+Complexitate spatiu: O(n)- retinem muchiile in lista de adiacenta. Deoarece este vorba despre un arbore, E=n-1, complexitatea este prin urmare O(n)
+Complexitate timp: O(V+E) tinand cont ca este un DFS usor modificat. In cazul de fata:
+		   V=n
+		   E=n-1, deoarece graful este arbore
+		   Prin urmare, complexitatea de timp este O(n)

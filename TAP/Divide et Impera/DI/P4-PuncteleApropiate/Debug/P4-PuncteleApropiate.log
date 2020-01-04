@@ -1,0 +1,3 @@
+﻿  P4-PuncteleApropiate.cpp
+C:\Users\admin\source\repos\P4-PuncteleApropiate\P4-PuncteleApropiate.cpp(36): warning C4244: 'return': conversion from 'int' to 'float', possible loss of data
+  P4-PuncteleApropiate.vcxproj -> C:\Users\admin\source\repos\P4-PuncteleApropiate\Debug\P4-PuncteleApropiate.exe
