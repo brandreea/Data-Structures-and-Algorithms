@@ -16,9 +16,11 @@ int v[NMAX + 5];
 ifstream fin("data.in");
 int isMaxim[NMAX + 5][NMAX + 5];
 int longestDecSeq[NMAX + 5];
-//1->este maxim in secventa de lungime maxima
-//2->nu este
-//3->exista cate o secventa de lungime maxima pentru ambele
+//for matrix isMaximum[i][qi] for element v[i] in a longest sequence of qi maximum that ends in v[i] we will memorise:
+//1->v[i] is the qi'th maximum in this sequence
+//2->v[i] is not the qi'th maximum in this sequence
+//3->we have found two distinct sequences with maximum length: one for which v[i] is qi'th maximum point and one for which v[i]
+//   is not.
 
 int D[NMAX + 5][NMAX + 5];
 void read()
@@ -53,6 +55,7 @@ int dp()
 	{	
 		
 		for (int j = i - 1; j >= 0; j--)
+			//case 1: v[i] is not the maximum: we search through sequences that already have 1 maximum oint
 			if (v[j] >= v[i])
 			{
 				//cout << v[j] << ">" << v[i] << "\n";
@@ -61,6 +64,8 @@ int dp()
 					D[i][0] = D[j][0]+1;
 					isMaxim[i][0] = 2;
 				}
+				//if maximum is equal to the already found longest sequence && that legth had v[i] as maximum
+				//it means we have found a distinct longest sequence which has one maximum that is not v[i]
 				else if (D[i][0] == D[j][0] + 1 && (isMaxim[i][0]==1 || isMaxim[i][0]==3))
 				{
 					
