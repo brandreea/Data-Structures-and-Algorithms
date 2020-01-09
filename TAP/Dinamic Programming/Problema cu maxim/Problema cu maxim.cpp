@@ -31,7 +31,7 @@ void dpUtil()
 {
 	//yet another dp ::::)
 	//at least works O(n^2) and doesn't ruin complexity
-	//a dp subproblem for finding the longest increasing increasing sequence that has v[i] as only maximum point 
+	//a dp subproblem for finding the longest increasing increasing sequence that has v[i] as only maximum point and as ending point
 	longestDecSeq[0] = 1;
 	for (int i = 1; i < n; i++)
 		for (int j = 0; j < i; j++)
