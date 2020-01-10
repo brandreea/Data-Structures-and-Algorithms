@@ -18,7 +18,7 @@ int isMaxim[NMAX + 5][NMAX + 5];
 int longestDecSeq[NMAX + 5];
 //1->the only maximum length seqences ending in v[i] have v[i] as maximum point
 //2->the only maximum length sequences ending in v[i] do not have it as maximum point
-//3->we have found two distinct sequences, ine for which v[i] is maximum point
+//3->we have found two distinct sequences, one for which v[i] is maximum point
 //  and one for which it isn't, both of maximum length
 
 int D[NMAX + 5][NMAX + 5];
