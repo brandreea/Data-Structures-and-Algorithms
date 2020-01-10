@@ -16,11 +16,9 @@ int v[NMAX + 5];
 ifstream fin("data.in");
 int isMaxim[NMAX + 5][NMAX + 5];
 int longestDecSeq[NMAX + 5];
-//for matrix isMaximum[i][qi] for element v[i] in a longest sequence of qi maximum that ends in v[i] we will memorise:
-//1->v[i] is the qi'th maximum in this sequence
-//2->v[i] is not the qi'th maximum in this sequence
-//3->we have found two distinct sequences with maximum length: one for which v[i] is qi'th maximum point and one for which v[i]
-//   is not.
+//1->este maxim in secventa de lungime maxima
+//2->nu este
+//3->exista cate o secventa de lungime maxima pentru ambele
 
 int D[NMAX + 5][NMAX + 5];
 void read()
@@ -33,7 +31,7 @@ void dpUtil()
 {
 	//yet another dp ::::)
 	//at least works O(n^2) and doesn't ruin complexity
-	//a dp subproblem for finding the longest increasing increasing sequence that has v[i] as only maximum point and as ending point
+	//a dp subproblem for finding the longest increasing increasing sequence that has v[i] as only maximum point 
 	longestDecSeq[0] = 1;
 	for (int i = 1; i < n; i++)
 		for (int j = 0; j < i; j++)
@@ -55,8 +53,7 @@ int dp()
 	{	
 		
 		for (int j = i - 1; j >= 0; j--)
-			//case 1: v[i] is not the maximum: we search through sequences that already have 1 maximum oint
-			if (v[j] >= v[i])
+			if ((v[j] == v[i] &&isMaxim[j][0]!=1)||v[i]<v[j])
 			{
 				//cout << v[j] << ">" << v[i] << "\n";
 				if (D[i][0] < D[j][0] + 1)
@@ -64,8 +61,6 @@ int dp()
 					D[i][0] = D[j][0]+1;
 					isMaxim[i][0] = 2;
 				}
-				//if maximum is equal to the already found longest sequence && that legth had v[i] as maximum
-				//it means we have found a distinct longest sequence which has one maximum that is not v[i]
 				else if (D[i][0] == D[j][0] + 1 && (isMaxim[i][0]==1 || isMaxim[i][0]==3))
 				{
 					
@@ -100,8 +95,8 @@ int dp()
 			//case 1: v[i] is not a maximum point
 			//search through the sequences already having qi maximums
 			for (int j = i - 1; j >= 0; j--)
-			{
-				if (v[i] <= v[j])
+			{	//if v[i] can be added without modifying the number of maximums 
+				if ((v[i] == v[j]&& isMaxim[j][qi] != 1)||v[i]<v[j])
 				{	
 					if (D[i][qi] < D[j][qi] + 1)
 					{
@@ -118,7 +113,7 @@ int dp()
 			//search through the sequences only having qi-1 maximums
 			for (int j = i - 1; j >= 0; j--)
 				//if v[i] would be a maximum point and v[j] wasn't anyway
-				if (v[i] > v[j] && isMaxim[j][qi - 1] == 2)
+				if (v[i] > v[j] && isMaxim[j][qi - 1] != 1)
 				{
 					if (D[i][qi] < D[j][qi-1] + 1)
 					{
