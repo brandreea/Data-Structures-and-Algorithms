@@ -1,4 +1,4 @@
-# DataStructureandAlgorithms# DataStructureandAlgorithms
+# DataStructureandAlgorithms
 
 This repository represent a collection of solved problems using data structures and algorithms.<br>
 The problems are divided in cathegories, which are followed by a pdf with the tasks.<br>
